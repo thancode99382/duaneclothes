@@ -147,10 +147,15 @@ export default function Home() {
             
             {/* Logo repeated */}
             <div className="flex items-end text-[#d91a1a] font-black italic tracking-tighter leading-none select-none opacity-80">
-              <span className="text-3xl lowercase">duane</span>
-              <div className="ml-1 flex flex-col items-center">
-                <span className="text-4xl font-serif">D</span>
-              </div>
+               <Link href="/" className="relative w-40 h-20 flex items-center">
+        <Image 
+          src="/logo.jpg" 
+          alt="Duane LA Logo" 
+          fill 
+          className="object-contain object-left" 
+          priority
+        />
+      </Link>
             </div>
           </div>
         </div>
