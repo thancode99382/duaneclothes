@@ -74,11 +74,11 @@ export default function Home() {
              
              
               <Image 
-                src="/polo_shirts.jpg"
+                src="/polo_shirts.png"
                 alt="Polo Collection"
                 fill
                 
-                className="object-contain object-right  translate-x-80 "
+                className="object-contain object-right  translate-x-80 translate-y-6 "
                 priority
               />
             </div>

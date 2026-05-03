@@ -21,8 +21,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="relative z-50 w-full max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-      <Link href="/" className="relative w-40 h-12 flex items-center">
+    <nav className="relative z-50 w-full max-w-7xl -translate-y-6 mx-auto px-6 py-6 flex items-center justify-between">
+      <Link href="/" className="relative w-40 h-20 flex items-center">
         <Image 
           src="/logo.jpg" 
           alt="Duane LA Logo" 

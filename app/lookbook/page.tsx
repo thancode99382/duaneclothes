@@ -32,7 +32,7 @@ export default function LookbookPage() {
         <div className="flex flex-col lg:flex-row gap-12 items-center mb-32">
           <div className="w-full lg:w-1/2 relative aspect-[3/4] bg-white p-3 md:p-5 shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500">
             <div className="relative w-full h-full overflow-hidden border border-neutral-100 bg-[#f5f5f5]">
-              <Image src="/polo_shirts.jpg" alt="Lookbook 1" fill className="object-cover hover:scale-105 transition-transform duration-700" />
+              <Image src="/product2.jpg" alt="Lookbook 1" fill className="object-cover hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-[#d91a1a] text-white px-6 py-4 shadow-xl">
               <p className="font-black text-2xl uppercase tracking-tighter">Look 01</p>
