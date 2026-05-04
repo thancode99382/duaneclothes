@@ -2,5 +2,5 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: 'Gotham', var(--font-geist-sans), sans-serif;
+  --font-sans: var(--font-bebas), sans-serif;
 }

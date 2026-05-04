@@ -39,7 +39,7 @@ export default function Navbar() {
             <Link 
               key={link.name}
               href={link.path} 
-              className={`relative hover:text-black transition-colors ${isActive ? "text-black" : "text-neutral-500"}`}
+              className={`relative hover:text-white transition-colors ${isActive ? "text-white" : "text-white"}`}
             >
               {link.name}
               {isActive && (
@@ -50,7 +50,7 @@ export default function Navbar() {
         })}
       </div>
 
-      <div className="flex items-center space-x-6 text-neutral-800">
+      <div className="flex items-center space-x-6 text-white">
         <Link href="/search" className="hover:text-[#d91a1a] transition-colors"><Search className="w-5 h-5" /></Link>
         <Link href="/cart" className="hover:text-[#d91a1a] transition-colors relative">
           <ShoppingBag className="w-5 h-5" />

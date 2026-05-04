@@ -2,14 +2,14 @@ import Navbar from "../../components/Navbar";
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen flex flex-col font-sans bg-[#e8e8e8] relative overflow-hidden">
+    <main className="min-h-screen flex flex-col font-sans bg-black relative overflow-hidden">
       {/* Background Noise */}
       <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
       
       <Navbar />
 
       <div className="max-w-4xl mx-auto px-6 py-20 w-full relative z-10 flex-1 flex flex-col justify-center">
-        <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-black leading-none mb-10 text-center">
+        <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white leading-none mb-10 text-center">
           LIÊN HỆ <span className="text-[#d91a1a]">VỚI CHÚNG TÔI</span>
         </h1>
         

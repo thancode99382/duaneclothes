@@ -6,15 +6,27 @@ import { Search, ShoppingBag, ShieldCheck, Shirt, Star, Truck, RefreshCw } from 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col font-sans bg-white">
-      {/* Top Background Section (Light Grey Texture) */}
+      {/* Top Background Section */}
       <div className="flex-1 flex flex-col relative overflow-hidden pb-7">
-        {/* Subtle background noise/texture overlay could go here */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
+        {/* Full Homepage Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/homepage.png"
+            alt="Homepage Background"
+            fill
+            className="object-center object-center"
+            priority
+          />
+          {/* Overlay to ensure text readability */}
+          <div className="absolute inset-0 hidden bg-white/40"></div>
+        </div>
+        {/* Subtle background noise/texture overlay */}
+        <div className="absolute  inset-0 opacity-10 pointer-events-none z-0" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
 
         <Navbar />
 
-        {/* Hero Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 flex-1 flex items-center pt-8">
+      
+        <div className="relative hidden z-10 w-full max-w-7xl mx-auto px-6 flex-1 flex items-center pt-8">
           <div className="w-full lg:w-[55%] flex flex-col z-20">
             <p className="text-sm font-bold tracking-[0.2em] text-neutral-600 mb-4 uppercase">
               Chi Tiết Tạo Nên Sự Khác Biệt
@@ -68,26 +80,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Side Image */}
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3/4 md:w-2/3 lg:w-[65%] h-[120%] z-0 flex justify-end pointer-events-none">
-            <div className="relative w-full h-full">
-             
-             
-              <Image 
-                src="/polo_shirts.png"
-                alt="Polo Collection"
-                fill
-                
-                className="object-contain object-right  translate-x-80 translate-y-6 "
-                priority
-              />
-            </div>
-          </div>
+
         </div>
       </div>
 
       {/* Bottom Black Section */}
-      <div className="bg-[#111111] text-white w-full relative z-20 border-t-4 border-[#d91a1a]/20">
+      <div className="bg-[#111111] hidden text-white w-full relative z-20 border-t-4 border-[#d91a1a]/20">
         {/* Subtle noise for the black background */}
         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
         
