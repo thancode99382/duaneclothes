@@ -15,15 +15,15 @@ export default function LookbookPage() {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 border-b-4 border-black pb-8 gap-8">
           <div>
-            <p className="text-[#d91a1a] font-bold tracking-[0.2em] uppercase mb-4">Volume 01</p>
+            <p className="text-[#d91a1a] font-bold tracking-[0.2em] uppercase mb-4">Tập 01</p>
             <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter text-black leading-none">
-              URBAN<br/>SYMPHONY
+              BẢN GIAO HƯỞNG<br/>ĐÔ THỊ
             </h1>
           </div>
           <div className="md:max-w-sm">
             <p className="text-neutral-600 font-medium leading-relaxed">
-              Our latest collection explores the intersection of brutalist architecture and fluid street motion. 
-              Designed for the modern environment.
+              Bộ sưu tập mới nhất của chúng tôi khám phá sự giao thoa giữa kiến trúc thô mộc và chuyển động đường phố mượt mà. 
+              Được thiết kế cho môi trường hiện đại.
             </p>
           </div>
         </div>
@@ -40,14 +40,14 @@ export default function LookbookPage() {
           </div>
           <div className="w-full lg:w-1/2 lg:pl-16 flex flex-col justify-center mt-10 lg:mt-0">
             <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4 leading-[0.9]">
-              STREET<br/>READY
+              SẴN SÀNG<br/>XUỐNG PHỐ
             </h2>
-            <p className="text-xl text-neutral-500 font-bold tracking-widest uppercase mb-8">Elevate the everyday</p>
+            <p className="text-xl text-neutral-500 font-bold tracking-widest uppercase mb-8">Nâng tầm phong cách mỗi ngày</p>
             <p className="text-neutral-700 mb-10 leading-relaxed text-lg max-w-md">
-              A blend of comfort and striking visuals. The oversized fit mixed with premium fabric ensures you stand out while moving effortlessly through the concrete jungle.
+              Sự pha trộn giữa sự thoải mái và hình ảnh nổi bật. Form dáng rộng kết hợp với chất liệu vải cao cấp đảm bảo bạn luôn nổi bật khi di chuyển dễ dàng qua khu rừng bê tông.
             </p>
             <Link href="/collection" className="inline-block border-b-4 border-black text-black font-black uppercase tracking-widest text-lg hover:text-[#d91a1a] hover:border-[#d91a1a] w-fit transition-colors pb-1">
-              Shop The Look
+              Mua Set Đồ Này
             </Link>
           </div>
         </div>
@@ -56,14 +56,14 @@ export default function LookbookPage() {
         <div className="flex flex-col-reverse lg:flex-row gap-12 items-center mb-32">
           <div className="w-full lg:w-1/2 lg:pr-16 flex flex-col justify-center items-start lg:items-end text-left lg:text-right mt-10 lg:mt-0">
             <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4 leading-[0.9]">
-              RAW<br/>TEXTURES
+              KẾT CẤU<br/>THÔ MỘC
             </h2>
-            <p className="text-xl text-neutral-500 font-bold tracking-widest uppercase mb-8">Unfiltered aesthetic</p>
+            <p className="text-xl text-neutral-500 font-bold tracking-widest uppercase mb-8">Thẩm mỹ nguyên bản</p>
             <p className="text-neutral-700 mb-10 leading-relaxed text-lg max-w-md">
-              Muted tones meet vibrant accents. Redefining what it means to be bold without being loud. This piece speaks for itself.
+              Tông màu trầm gặp gỡ những điểm nhấn sống động. Định nghĩa lại thế nào là táo bạo mà không cần phô trương. Món đồ này tự nói lên tất cả.
             </p>
             <Link href="/collection" className="inline-block border-b-4 border-black text-black font-black uppercase tracking-widest text-lg hover:text-[#d91a1a] hover:border-[#d91a1a] transition-colors pb-1">
-              Shop The Look
+              Mua Set Đồ Này
             </Link>
           </div>
           <div className="w-full lg:w-1/2 relative aspect-square md:aspect-[4/3] bg-white p-3 md:p-5 shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
@@ -83,10 +83,10 @@ export default function LookbookPage() {
           
           <div className="relative z-10 flex flex-col items-center text-center">
             <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-10 leading-[0.9]">
-              THE <span className="text-[#d91a1a]">ESSENTIALS</span><br/>COLLECTION
+              BỘ SƯU TẬP <span className="text-[#d91a1a]">THIẾT YẾU</span>
             </h2>
             <Link href="/collection" className="bg-[#d91a1a] hover:bg-red-700 text-white font-bold uppercase tracking-widest px-12 py-5 shadow-[0_4px_14px_0_rgba(217,26,26,0.39)] transition-all">
-              Explore Full Catalog
+              Khám Phá Toàn Bộ Danh Mục
             </Link>
           </div>
         </div>

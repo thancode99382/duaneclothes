@@ -17,18 +17,18 @@ export default function CartPage() {
 
       <div className="max-w-7xl mx-auto px-6 py-16 md:py-24 w-full relative z-10 flex-1">
         <Link href="/" className="flex items-center gap-2 text-sm font-bold tracking-[0.15em] text-neutral-500 hover:text-[#d91a1a] uppercase mb-12 transition-colors w-fit">
-          <ArrowLeft className="w-4 h-4" /> Back to home
+          <ArrowLeft className="w-4 h-4" /> Về trang chủ
         </Link>
         <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-12 text-black leading-none">
-          YOUR <span className="text-[#d91a1a]">CART</span>
+          GIỎ HÀNG <span className="text-[#d91a1a]">CỦA BẠN</span>
         </h1>
         
         {cart.length === 0 ? (
           <div className="bg-white/60 backdrop-blur-md border border-neutral-200 p-16 text-center shadow-2xl rounded-xl">
-            <h2 className="text-3xl font-black uppercase tracking-tighter mb-4 text-neutral-800">Cart is Empty</h2>
-            <p className="text-neutral-500 font-medium mb-8">Time to define your identity.</p>
+            <h2 className="text-3xl font-black uppercase tracking-tighter mb-4 text-neutral-800">Giỏ Hàng Trống</h2>
+            <p className="text-neutral-500 font-medium mb-8">Đã đến lúc định hình bản sắc của bạn.</p>
             <Link href="/collection" className="bg-[#d91a1a] hover:bg-red-700 text-white font-bold uppercase tracking-widest text-sm px-10 py-4 shadow-[0_4px_14px_0_rgba(217,26,26,0.39)] transition-all inline-block">
-              Shop Collection
+              Mua Sắm Ngay
             </Link>
           </div>
         ) : (
@@ -81,25 +81,25 @@ export default function CartPage() {
             
             <div className="w-full lg:w-1/3">
               <div className="bg-[#111111] text-white p-8 rounded-xl shadow-2xl sticky top-6">
-                <h2 className="text-2xl font-black uppercase tracking-tighter mb-8 border-b border-neutral-800 pb-4">Order Summary</h2>
+                <h2 className="text-2xl font-black uppercase tracking-tighter mb-8 border-b border-neutral-800 pb-4">Tóm Tắt Đơn Hàng</h2>
                 
                 <div className="flex justify-between mb-4 font-medium text-neutral-400">
-                  <span className="tracking-wide">SUBTOTAL</span>
+                  <span className="tracking-wide">TẠM TÍNH</span>
                   <span className="text-white">${cartTotal.toFixed(2)}</span>
                 </div>
                 
                 <div className="flex justify-between mb-8 font-medium text-neutral-400 border-b border-neutral-800 pb-8">
-                  <span className="tracking-wide">TAX (10%)</span>
+                  <span className="tracking-wide">THUẾ (10%)</span>
                   <span className="text-white">${tax.toFixed(2)}</span>
                 </div>
                 
                 <div className="flex justify-between mb-10 text-3xl font-black tracking-tighter">
-                  <span>TOTAL</span>
+                  <span>TỔNG CỘNG</span>
                   <span className="text-[#d91a1a]">${total.toFixed(2)}</span>
                 </div>
                 
                 <Link href="/checkout" className="w-full flex items-center justify-center gap-3 bg-[#d91a1a] hover:bg-red-700 text-white font-bold uppercase tracking-widest py-5 px-6 transition-all shadow-[0_4px_14px_0_rgba(217,26,26,0.39)]">
-                  Checkout <ArrowRight className="w-5 h-5" />
+                  Thanh Toán <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
             </div>

@@ -11,14 +11,14 @@ export default function CollectionPage() {
 
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-20 w-full relative z-10">
         <Link href="/" className="flex items-center gap-2 text-sm font-bold tracking-[0.15em] text-neutral-500 hover:text-[#d91a1a] uppercase mb-12 transition-colors w-fit">
-          <ArrowLeft className="w-4 h-4" /> Back to home
+          <ArrowLeft className="w-4 h-4" /> Về trang chủ
         </Link>
         <div className="mb-16">
           <p className="text-sm font-bold tracking-[0.2em] text-[#d91a1a] mb-2 uppercase">
-            Streetwear Essentials
+            Sản Phẩm Đường Phố Thiết Yếu
           </p>
           <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-black leading-none">
-            OUR <span className="text-[#d91a1a]">COLLECTION</span>
+            BỘ SƯU TẬP <span className="text-[#d91a1a]">CỦA CHÚNG TÔI</span>
           </h1>
         </div>
 
@@ -36,7 +36,7 @@ export default function CollectionPage() {
                 
                 {product.popular && (
                   <div className="absolute top-4 right-4 bg-[#d91a1a] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 shadow-md">
-                    Popular
+                    Phổ Biến
                   </div>
                 )}
               </div>

@@ -12,8 +12,8 @@ export type Product = {
 export const products: Product[] = [
   {
     id: "1",
-    name: "Classic White Polo",
-    description: "A premium white polo shirt with red collar accents. Perfect for everyday streetwear.",
+    name: "Polo Trắng Cổ Điển",
+    description: "Áo polo trắng cao cấp với điểm nhấn cổ áo màu đỏ. Hoàn hảo cho phong cách đường phố hàng ngày.",
     price: 45.00,
     category: "drinks",
     image: "/product1.jpg",
@@ -22,8 +22,8 @@ export const products: Product[] = [
   },
   {
     id: "2",
-    name: "Midnight Black Polo",
-    description: "Sleek black polo shirt with minimal design. Detail makes the difference.",
+    name: "Polo Đen Huyền Bí",
+    description: "Áo polo đen mượt mà với thiết kế tối giản. Chi tiết tạo nên sự khác biệt.",
     price: 50.00,
     category: "coffee",
     image: "/product2.jpg",

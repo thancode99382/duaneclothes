@@ -17,25 +17,25 @@ export default function Home() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 flex-1 flex items-center pt-8">
           <div className="w-full lg:w-[55%] flex flex-col z-20">
             <p className="text-sm font-bold tracking-[0.2em] text-neutral-600 mb-4 uppercase">
-              Detail Makes Difference
+              Chi Tiết Tạo Nên Sự Khác Biệt
             </p>
             <h1 className="text-6xl sm:text-7xl lg:text-[5.5rem] font-black leading-[0.9] tracking-wide text-black uppercase mb-1">
-              DEFINE YOUR
+              ĐỊNH HÌNH
             </h1>
             <h1 className="text-6xl sm:text-7xl lg:text-[5.5rem] font-black leading-[0.9] tracking-wide text-[#d91a1a] uppercase mb-6 drop-shadow-sm">
-              IDENTITY
+              BẢN SẮC
             </h1>
             
             <p className="text-neutral-700 max-w-[400px] mb-8 font-medium leading-relaxed">
-              Duane &ndash; Premium streetwear polo collection for young generation. Youth culture / since 2026.
+              Duane &ndash; Bộ sưu tập áo polo streetwear cao cấp dành cho thế hệ trẻ. Văn hóa giới trẻ / từ năm 2026.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-16">
               <Link href="/collection" className="bg-[#d91a1a] hover:bg-red-700 text-white font-bold uppercase tracking-widest text-sm px-8 py-4 shadow-[0_4px_14px_0_rgba(217,26,26,0.39)] transition-all">
-                Shop Now
+                Mua Ngay
               </Link>
               <button className="bg-transparent border border-[#d91a1a] text-[#d91a1a] hover:bg-[#d91a1a] hover:text-white font-bold uppercase tracking-widest text-sm px-8 py-4 transition-all">
-                View Lookbook
+                Xem Lookbook
               </button>
             </div>
 
@@ -46,7 +46,7 @@ export default function Home() {
                   <ShieldCheck strokeWidth={1.5} className="w-10 h-10" />
                 </div>
                 <p className="text-xs font-bold tracking-widest text-neutral-800 text-center uppercase leading-tight">
-                  Premium<br/>Quality
+                  Chất Lượng<br/>Cao Cấp
                 </p>
               </div>
               <div className="flex flex-col items-center">
@@ -54,7 +54,7 @@ export default function Home() {
                   <Shirt strokeWidth={1.5} className="w-10 h-10" />
                 </div>
                 <p className="text-xs font-bold tracking-widest text-neutral-800 text-center uppercase leading-tight">
-                  Street<br/>Style
+                  Phong Cách<br/>Đường Phố
                 </p>
               </div>
               <div className="flex flex-col items-center">
@@ -62,7 +62,7 @@ export default function Home() {
                   <Star strokeWidth={1.5} className="w-10 h-10" />
                 </div>
                 <p className="text-xs font-bold tracking-widest text-neutral-800 text-center uppercase leading-tight">
-                  Youth<br/>Culture
+                  Văn Hóa<br/>Giới Trẻ
                 </p>
               </div>
             </div>
@@ -96,25 +96,25 @@ export default function Home() {
           <div className="py-12 flex flex-col lg:flex-row lg:items-center justify-between gap-10">
             <div className="flex-1">
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-2">
-                Polo Collection <span className="text-[#d91a1a]">2026</span>
+                Bộ Sưu Tập Polo <span className="text-[#d91a1a]">2026</span>
               </h2>
               <p className="text-neutral-400 font-medium max-w-md">
-                Limited edition &ndash; trendy apparel for young and dynamic lifestyle.
+                Phiên bản giới hạn &ndash; trang phục thời thượng cho phong cách sống trẻ trung và năng động.
               </p>
             </div>
             
             <div className="flex-1 grid grid-cols-1 md:grid-cols-3 gap-6 lg:border-l border-neutral-800 lg:pl-10">
               <div>
-                <p className="font-bold text-sm tracking-wider uppercase mb-1">Limited Edition</p>
-                <p className="text-neutral-400 text-sm">Exclusive design</p>
+                <p className="font-bold text-sm tracking-wider uppercase mb-1">Phiên Bản Giới Hạn</p>
+                <p className="text-neutral-400 text-sm">Thiết kế độc quyền</p>
               </div>
               <div className="md:border-l border-neutral-800 md:pl-6">
-                <p className="font-bold text-sm tracking-wider uppercase mb-1">Trendy Apparel</p>
-                <p className="text-neutral-400 text-sm">Modern & stylish</p>
+                <p className="font-bold text-sm tracking-wider uppercase mb-1">Trang Phục Thời Thượng</p>
+                <p className="text-neutral-400 text-sm">Hiện đại & phong cách</p>
               </div>
               <div className="md:border-l border-neutral-800 md:pl-6">
-                <p className="font-bold text-sm tracking-wider uppercase mb-1">Youth Culture</p>
-                <p className="text-neutral-400 text-sm">For young generation</p>
+                <p className="font-bold text-sm tracking-wider uppercase mb-1">Văn Hóa Giới Trẻ</p>
+                <p className="text-neutral-400 text-sm">Dành cho thế hệ trẻ</p>
               </div>
             </div>
           </div>
@@ -125,22 +125,22 @@ export default function Home() {
               <div className="flex items-center gap-4">
                 <Truck className="w-8 h-8 text-neutral-400" strokeWidth={1} />
                 <div>
-                  <p className="font-bold text-sm tracking-widest uppercase">Free Shipping</p>
-                  <p className="text-neutral-500 text-xs mt-0.5">On all orders</p>
+                  <p className="font-bold text-sm tracking-widest uppercase">Giao Hàng Miễn Phí</p>
+                  <p className="text-neutral-500 text-xs mt-0.5">Cho mọi đơn hàng</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
                 <ShieldCheck className="w-8 h-8 text-neutral-400" strokeWidth={1} />
                 <div>
-                  <p className="font-bold text-sm tracking-widest uppercase">Secure Payment</p>
-                  <p className="text-neutral-500 text-xs mt-0.5">100% protected</p>
+                  <p className="font-bold text-sm tracking-widest uppercase">Thanh Toán An Toàn</p>
+                  <p className="text-neutral-500 text-xs mt-0.5">Bảo mật 100%</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
                 <RefreshCw className="w-8 h-8 text-neutral-400" strokeWidth={1} />
                 <div>
-                  <p className="font-bold text-sm tracking-widest uppercase">Easy Returns</p>
-                  <p className="text-neutral-500 text-xs mt-0.5">14 days return</p>
+                  <p className="font-bold text-sm tracking-widest uppercase">Đổi Trả Dễ Dàng</p>
+                  <p className="text-neutral-500 text-xs mt-0.5">Đổi trả trong 14 ngày</p>
                 </div>
               </div>
             </div>

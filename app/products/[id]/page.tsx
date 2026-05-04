@@ -19,9 +19,9 @@ export default function ProductDetailPage() {
     return (
       <div className="min-h-screen bg-[#e8e8e8] flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-5xl font-black uppercase tracking-tighter mb-6">Product Not Found</h1>
+          <h1 className="text-5xl font-black uppercase tracking-tighter mb-6">Không Tìm Thấy Sản Phẩm</h1>
           <Link href="/collection" className="bg-[#d91a1a] hover:bg-red-700 text-white font-bold uppercase tracking-widest text-sm px-8 py-4 shadow-[0_4px_14px_0_rgba(217,26,26,0.39)] transition-all">
-            Back to menu
+            Về danh mục
           </Link>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function ProductDetailPage() {
 
       <div className="max-w-7xl mx-auto px-6 py-12 w-full relative z-10 flex-1 flex flex-col">
         <Link href="/collection" className="flex items-center gap-2 text-sm font-bold tracking-[0.15em] text-neutral-500 hover:text-[#d91a1a] uppercase mb-12 transition-colors w-fit">
-          <ArrowLeft className="w-4 h-4" /> Back to collection
+          <ArrowLeft className="w-4 h-4" /> Về bộ sưu tập
         </Link>
         
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
@@ -103,7 +103,7 @@ export default function ProductDetailPage() {
                 }`}
               >
                 <ShoppingBag className="w-5 h-5" />
-                {isAdded ? "Added to Cart!" : "Add to Cart"}
+                {isAdded ? "Đã Thêm Vào Giỏ!" : "Thêm Vào Giỏ"}
               </button>
             </div>
           </div>

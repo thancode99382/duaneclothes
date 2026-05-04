@@ -38,10 +38,10 @@ export default function CheckoutPage() {
         <div className="absolute inset-0 opacity-5 pointer-events-none z-0" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
         <div className="max-w-2xl px-6 py-24 text-center flex flex-col items-center relative z-10">
           <CheckCircle2 className="w-24 h-24 text-[#d91a1a] mb-8" />
-          <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6 leading-none">Order <br/>Confirmed!</h1>
-          <p className="text-neutral-400 mb-12 text-lg font-medium">Thank you for defining your identity. We ve received your order and will begin processing it right away.</p>
+          <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6 leading-none">Đơn Hàng <br/>Đã Xác Nhận!</h1>
+          <p className="text-neutral-400 mb-12 text-lg font-medium">Cảm ơn bạn đã định hình bản sắc cùng chúng tôi. Chúng tôi đã nhận được đơn hàng và sẽ bắt đầu xử lý ngay lập tức.</p>
           <Link href="/" className="bg-[#d91a1a] text-white font-bold uppercase tracking-widest text-sm px-12 py-5 shadow-[0_4px_14px_0_rgba(217,26,26,0.39)] hover:bg-red-700 transition-all">
-            Back to Home
+            Về Trang Chủ
           </Link>
         </div>
       </main>
@@ -52,9 +52,9 @@ export default function CheckoutPage() {
     return (
       <main className="min-h-screen flex flex-col font-sans bg-[#e8e8e8] relative overflow-hidden justify-center items-center">
         <div className="max-w-3xl px-6 py-24 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-none">Cart <span className="text-[#d91a1a]">Empty</span></h1>
+          <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-none">Giỏ Hàng <span className="text-[#d91a1a]">Trống</span></h1>
           <Link href="/collection" className="bg-black text-white font-bold uppercase tracking-widest text-sm px-10 py-5 hover:bg-neutral-800 transition-all shadow-xl inline-block">
-            Shop Collection
+            Mua Sắm Ngay
           </Link>
         </div>
       </main>
@@ -68,17 +68,17 @@ export default function CheckoutPage() {
 
       <div className="max-w-7xl mx-auto px-6 py-16 md:py-24 w-full relative z-10 flex-1">
         <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-12 text-black leading-none">
-          SECURE <span className="text-[#d91a1a]">CHECKOUT</span>
+          THANH TOÁN <span className="text-[#d91a1a]">AN TOÀN</span>
         </h1>
         
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           <div className="w-full lg:w-2/3">
             <form id="checkout-form" onSubmit={handleSubmit} className="bg-white p-8 md:p-12 shadow-2xl rounded-2xl border border-neutral-100">
-              <h2 className="text-2xl font-black uppercase tracking-tighter mb-8 border-b-4 border-black inline-block pb-1">Shipping Details</h2>
+              <h2 className="text-2xl font-black uppercase tracking-tighter mb-8 border-b-4 border-black inline-block pb-1">Chi Tiết Giao Hàng</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <div>
-                  <label className="block text-xs font-bold text-neutral-500 mb-2 uppercase tracking-widest">Full Name *</label>
+                  <label className="block text-xs font-bold text-neutral-500 mb-2 uppercase tracking-widest">Họ Tên *</label>
                   <input 
                     type="text" 
                     name="fullName"
@@ -100,7 +100,7 @@ export default function CheckoutPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold text-neutral-500 mb-2 uppercase tracking-widest">Phone</label>
+                  <label className="block text-xs font-bold text-neutral-500 mb-2 uppercase tracking-widest">Số Điện Thoại</label>
                   <input 
                     type="tel" 
                     name="phone"
@@ -110,7 +110,7 @@ export default function CheckoutPage() {
                   />
                 </div>
                 <div className="md:col-span-2">
-                  <label className="block text-xs font-bold text-neutral-500 mb-2 uppercase tracking-widest">Address *</label>
+                  <label className="block text-xs font-bold text-neutral-500 mb-2 uppercase tracking-widest">Địa Chỉ *</label>
                   <input 
                     type="text" 
                     name="address"
@@ -121,7 +121,7 @@ export default function CheckoutPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold text-neutral-500 mb-2 uppercase tracking-widest">City *</label>
+                  <label className="block text-xs font-bold text-neutral-500 mb-2 uppercase tracking-widest">Thành Phố *</label>
                   <input 
                     type="text" 
                     name="city"
@@ -137,7 +137,7 @@ export default function CheckoutPage() {
           
           <div className="w-full lg:w-1/3">
             <div className="bg-[#111111] text-white p-8 rounded-2xl shadow-2xl sticky top-6">
-              <h2 className="text-2xl font-black uppercase tracking-tighter mb-8 border-b border-neutral-800 pb-4">Order Summary</h2>
+              <h2 className="text-2xl font-black uppercase tracking-tighter mb-8 border-b border-neutral-800 pb-4">Tóm Tắt Đơn Hàng</h2>
               
               <div className="max-h-60 overflow-y-auto mb-8 pr-4 custom-scrollbar">
                 {cart.map(item => (
@@ -153,17 +153,17 @@ export default function CheckoutPage() {
               
               <div className="border-t border-neutral-800 pt-6 mb-6 font-medium space-y-4">
                 <div className="flex justify-between text-neutral-400">
-                  <span className="tracking-wide">SUBTOTAL</span>
+                  <span className="tracking-wide">TẠM TÍNH</span>
                   <span className="text-white">${cartTotal.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-neutral-400">
-                  <span className="tracking-wide">TAX (10%)</span>
+                  <span className="tracking-wide">THUẾ (10%)</span>
                   <span className="text-white">${tax.toFixed(2)}</span>
                 </div>
               </div>
               
               <div className="flex justify-between mb-10 text-3xl font-black border-t border-neutral-800 pt-6 tracking-tighter">
-                <span>TOTAL</span>
+                <span>TỔNG CỘNG</span>
                 <span className="text-[#d91a1a]">${total.toFixed(2)}</span>
               </div>
               
@@ -172,7 +172,7 @@ export default function CheckoutPage() {
                 form="checkout-form"
                 className="w-full flex items-center justify-center gap-3 bg-[#d91a1a] hover:bg-red-700 text-white font-bold uppercase tracking-widest py-5 px-6 transition-all shadow-[0_4px_14px_0_rgba(217,26,26,0.39)]"
               >
-                Place Order <ArrowRight className="w-5 h-5" />
+                Đặt Hàng <ArrowRight className="w-5 h-5" />
               </button>
             </div>
           </div>

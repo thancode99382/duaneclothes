@@ -13,11 +13,11 @@ export default function Navbar() {
   const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   const navLinks = [
-    { name: "HOME", path: "/" },
-    { name: "COLLECTION", path: "/collection" },
-    { name: "ABOUT", path: "/about" },
+    { name: "TRANG CHỦ", path: "/" },
+    { name: "BỘ SƯU TẬP", path: "/collection" },
+    { name: "GIỚI THIỆU", path: "/about" },
     { name: "LOOKBOOK", path: "/lookbook" },
-    { name: "CONTACT", path: "/contact" },
+    { name: "LIÊN HỆ", path: "/contact" },
   ];
 
   return (

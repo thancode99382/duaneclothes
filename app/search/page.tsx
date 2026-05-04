@@ -29,7 +29,7 @@ export default function SearchPage() {
       {/* Decorative large text in background */}
       <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center z-0 pointer-events-none opacity-[0.03] overflow-hidden select-none">
         <h1 className="text-[25vw] font-black uppercase tracking-tighter text-black leading-none whitespace-nowrap">
-          SEARCH
+          TÌM KIẾM
         </h1>
       </div>
 
@@ -48,7 +48,7 @@ export default function SearchPage() {
                 <input
                   type="text"
                   className="w-full bg-transparent text-black font-black text-2xl md:text-5xl lg:text-6xl py-4 md:py-6 pl-6 pr-6 md:pr-16 focus:outline-none placeholder-neutral-300 uppercase tracking-tighter"
-                  placeholder="FIND YOUR FIT..."
+                  placeholder="TÌM KIẾM PHONG CÁCH CỦA BẠN..."
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   onFocus={() => setIsFocused(true)}
@@ -72,11 +72,11 @@ export default function SearchPage() {
         <div className={`w-full relative transition-opacity duration-500 ${mounted ? 'opacity-100' : 'opacity-0'}`}>
           <div className="flex items-end justify-between mb-10 border-b-[3px] border-black pb-4">
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter flex items-center gap-4">
-              {query ? 'RESULTS' : 'TRENDING'}
+              {query ? 'KẾT QUẢ' : 'THỊNH HÀNH'}
               {query && <span className="text-[#d91a1a] truncate max-w-[200px] md:max-w-[400px]">"{query}"</span>}
             </h2>
             <p className="text-sm md:text-base font-bold tracking-[0.2em] text-neutral-500 uppercase h-full flex items-end">
-              [{filteredProducts.length}] ITEMS
+              [{filteredProducts.length}] SẢN PHẨM
             </p>
           </div>
 
@@ -103,7 +103,7 @@ export default function SearchPage() {
                     {/* View Button */}
                     <div className="absolute bottom-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-[cubic-bezier(0.33,1,0.68,1)] flex">
                       <div className="bg-[#d91a1a] text-white py-4 px-6 font-black uppercase tracking-widest text-sm flex-1 flex items-center justify-between border-t-4 border-black">
-                        <span>View Item</span>
+                        <span>Xem Sản Phẩm</span>
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" strokeWidth={3} />
                       </div>
                     </div>
@@ -133,16 +133,16 @@ export default function SearchPage() {
                   <X className="h-16 w-16 md:h-24 md:w-24 text-[#d91a1a] transition-transform duration-500 group-hover:scale-110 group-hover:rotate-90" strokeWidth={4} />
                 </div>
               </div>
-              <h2 className="text-4xl md:text-6xl lg:text-8xl font-black uppercase tracking-tighter text-black mb-6 leading-none">NOTHING FOUND</h2>
+              <h2 className="text-4xl md:text-6xl lg:text-8xl font-black uppercase tracking-tighter text-black mb-6 leading-none">KHÔNG TÌM THẤY GÌ</h2>
               <p className="text-lg md:text-xl text-neutral-500 font-medium max-w-lg mx-auto">
-                We couldn't find anything matching "{query}". Try checking your spelling or use different keywords.
+                Chúng tôi không thể tìm thấy bất cứ thứ gì khớp với "{query}". Hãy thử kiểm tra lỗi chính tả hoặc sử dụng các từ khóa khác.
               </p>
               <button 
                 onClick={() => setQuery("")}
                 className="mt-12 bg-black text-white px-8 py-5 font-black uppercase tracking-widest hover:bg-[#d91a1a] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] transition-all duration-300 flex items-center gap-3 text-sm md:text-base group"
               >
                 <X className="w-6 h-6 group-hover:rotate-90 transition-transform duration-300" strokeWidth={3} />
-                Clear Search
+                Xóa Tìm Kiếm
               </button>
             </div>
           )}
