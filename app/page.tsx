@@ -20,10 +20,10 @@ export default function Home() {
               Chi Tiết Tạo Nên Sự Khác Biệt
             </p>
             <h1 className="text-6xl sm:text-7xl lg:text-[5.5rem] font-black leading-[0.9] tracking-wide text-black uppercase mb-1">
-              ĐỊNH HÌNH
+              ĐƠN GIẢN
             </h1>
             <h1 className="text-6xl sm:text-7xl lg:text-[5.5rem] font-black leading-[0.9] tracking-wide text-[#d91a1a] uppercase mb-6 drop-shadow-sm">
-              BẢN SẮC
+              KHÁC BIỆT
             </h1>
             
             <p className="text-neutral-700 max-w-[400px] mb-8 font-medium leading-relaxed">
