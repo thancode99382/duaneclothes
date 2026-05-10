@@ -64,7 +64,7 @@ export default function RootLayout({
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                     </span>
-                    <span>27, Hùng Vương, Phường Hải Châu, Tp. Đà Nẵng</span>
+                    <span>27 Hùng Vương, Phường Hải Châu, Tp. Đà Nẵng</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="text-red-500">
