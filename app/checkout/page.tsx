@@ -146,7 +146,7 @@ export default function CheckoutPage() {
                       <span className="font-black text-[#d91a1a] text-lg mr-2">{item.quantity}x</span> 
                       <span className="text-neutral-300 font-bold uppercase tracking-tight">{item.name}</span>
                     </div>
-                    <div className="font-black text-lg">${(item.price * item.quantity).toFixed(2)}</div>
+                    <div className="font-black text-lg">{(item.price * item.quantity).toLocaleString("vi-VN")}đ</div>
                   </div>
                 ))}
               </div>
@@ -154,17 +154,17 @@ export default function CheckoutPage() {
               <div className="border-t border-neutral-800 pt-6 mb-6 font-medium space-y-4">
                 <div className="flex justify-between text-neutral-400">
                   <span className="tracking-wide">TẠM TÍNH</span>
-                  <span className="text-white">${cartTotal.toFixed(2)}</span>
+                  <span className="text-white">{cartTotal.toLocaleString("vi-VN")} đ</span>
                 </div>
                 <div className="flex justify-between text-neutral-400">
                   <span className="tracking-wide">THUẾ (10%)</span>
-                  <span className="text-white">${tax.toFixed(2)}</span>
+                  <span className="text-white">{tax.toLocaleString("vi-VN")} đ</span>
                 </div>
               </div>
               
               <div className="flex justify-between mb-10 text-3xl font-black border-t border-neutral-800 pt-6 tracking-tighter">
                 <span>TỔNG CỘNG</span>
-                <span className="text-[#d91a1a]">${total.toFixed(2)}</span>
+                <span className="text-[#d91a1a]">{total.toLocaleString("vi-VN")} đ</span>
               </div>
               
               <button 

@@ -22,8 +22,8 @@ function ProductCard({
     product.badge === "BEST SELLER"
       ? "bg-[#d91a1a]"
       : product.badge === "LIMITED"
-      ? "bg-neutral-700"
-      : "bg-[#d91a1a]";
+        ? "bg-neutral-700"
+        : "bg-[#d91a1a]";
 
   const handleAddToCart = () => {
     const size = selectedSize ?? product.sizes[1]; // default M
@@ -40,7 +40,7 @@ function ProductCard({
   return (
     <div className="bg-[#1a1a1a] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-white/5 hover:border-[#d91a1a]/30 transition-all duration-300 hover:shadow-[0_20px_60px_-10px_rgba(217,26,26,0.2)]">
       {/* Image Area */}
-      <div className="relative aspect-[4/5] bg-[#111111]">
+      <div className="relative aspect-[3/4] bg-[#111111]">
         <Image
           src={product.image}
           alt={product.name}
@@ -122,11 +122,10 @@ function ProductCard({
           {[1, 2, 3, 4, 5].map((i) => (
             <Star
               key={i}
-              className={`w-3.5 h-3.5 ${
-                i <= Math.round(product.rating)
-                  ? "text-[#d91a1a] fill-[#d91a1a]"
-                  : "text-neutral-700 fill-neutral-700"
-              }`}
+              className={`w-3.5 h-3.5 ${i <= Math.round(product.rating)
+                ? "text-[#d91a1a] fill-[#d91a1a]"
+                : "text-neutral-700 fill-neutral-700"
+                }`}
             />
           ))}
           <span className="text-neutral-500 text-xs ml-1">
@@ -140,11 +139,10 @@ function ProductCard({
             <button
               key={size}
               onClick={() => setSelectedSize(size)}
-              className={`px-3 py-1.5 text-xs font-bold uppercase rounded transition-all ${
-                selectedSize === size
-                  ? "bg-[#d91a1a] text-white border border-[#d91a1a]"
-                  : "text-neutral-300 border border-neutral-700 hover:border-white hover:text-white"
-              }`}
+              className={`px-3 py-1.5 text-xs font-bold uppercase rounded transition-all ${selectedSize === size
+                ? "bg-[#d91a1a] text-white border border-[#d91a1a]"
+                : "text-neutral-300 border border-neutral-700 hover:border-white hover:text-white"
+                }`}
             >
               {size}
             </button>
