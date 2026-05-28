@@ -32,7 +32,7 @@ export const products: Product[] = [
   },
   {
     id: "2",
-    name: "Polo than Viền Trắng",
+    name: "Polo Xanh navy Viền Trắng",
     description: "Áo polo tím mượt mà với thiết kế tối giản. Chi tiết tạo nên sự khác biệt.",
     price: 259000,
     originalPrice: 570000,
