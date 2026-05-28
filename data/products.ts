@@ -32,7 +32,7 @@ export const products: Product[] = [
   },
   {
     id: "2",
-    name: "Polo Tím Viền Trắng",
+    name: "Polo than Viền Trắng",
     description: "Áo polo tím mượt mà với thiết kế tối giản. Chi tiết tạo nên sự khác biệt.",
     price: 259000,
     originalPrice: 570000,
@@ -47,7 +47,7 @@ export const products: Product[] = [
   },
    {
     id: "2",
-    name: "Polo Trắng Viền Đen",
+    name: "Polo Trắng Viền Xanh",
     description: "Áo polo trắng mượt mà với thiết kế tối giản. Chi tiết tạo nên sự khác biệt.",
     price: 259000,
     originalPrice: 570000,

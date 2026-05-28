@@ -16,7 +16,7 @@ export default function AboutPage() {
 
       <div className="max-w-4xl mx-auto px-6 py-20 w-full relative z-10 flex-1 flex flex-col justify-center">
         <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white leading-none mb-10 text-center">
-          VỀ <span className="text-[#d91a1a]">DUANE LA</span>
+          VỀ <span className="text-[#d91a1a]">DUANE</span>
         </h1>
 
         <div className="bg-white p-10 md:p-16 shadow-2xl rounded-2xl border border-neutral-100">
@@ -24,13 +24,13 @@ export default function AboutPage() {
             Văn hóa giới trẻ / Từ 2026
           </p>
           <p className="text-lg md:text-xl text-neutral-700 leading-relaxed font-medium mb-8">
-            Duane LA ra đời từ mong muốn thu hẹp khoảng cách giữa thời trang dạo
+            Duane ra đời từ mong muốn thu hẹp khoảng cách giữa thời trang dạo
             phố cao cấp và thời trang dễ tiếp cận. Chúng tôi tin rằng chi tiết
             tạo nên sự khác biệt, và bộ sưu tập áo polo của chúng tôi phản ánh
             chính xác điều đó.
           </p>
           <p className="text-lg md:text-xl text-neutral-700 leading-relaxed font-medium">
-            Được thiết kế tại Los Angeles, mỗi sản phẩm đều được chế tác để định
+            Được thiết kế tại Đà Nẵng, mỗi sản phẩm đều được chế tác để định
             hình bản sắc của bạn. Chúng tôi không chỉ làm ra quần áo; chúng tôi
             nuôi dưỡng một phong cách sống năng động cho thế hệ trẻ.
           </p>
