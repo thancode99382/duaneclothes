@@ -9,7 +9,7 @@ import { useCart } from "../context/CartContext";
 export default function Navbar() {
   const pathname = usePathname();
   const { cart } = useCart();
-  
+
   const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   const navLinks = [
@@ -23,22 +23,22 @@ export default function Navbar() {
   return (
     <nav className="relative z-50 w-full max-w-7xl -translate-y-6 mx-auto px-6 py-6 flex items-center justify-between">
       <Link href="/" className="relative w-40 h-20 flex items-center">
-        <Image 
+        {/* <Image 
           src="/logo.jpg" 
           alt="Duane LA Logo" 
           fill 
           className="object-contain object-left" 
           priority
-        />
+        /> */}
       </Link>
 
       <div className="hidden md:flex space-x-10 text-sm font-semibold tracking-widest text-neutral-800 uppercase">
         {navLinks.map((link) => {
           const isActive = pathname === link.path;
           return (
-            <Link 
+            <Link
               key={link.name}
-              href={link.path} 
+              href={link.path}
               className={`relative hover:text-white transition-colors ${isActive ? "text-white" : "text-white"}`}
             >
               {link.name}
@@ -51,8 +51,13 @@ export default function Navbar() {
       </div>
 
       <div className="flex items-center space-x-6 text-white">
-        <Link href="/search" className="hover:text-[#d91a1a] transition-colors"><Search className="w-5 h-5" /></Link>
-        <Link href="/cart" className="hover:text-[#d91a1a] transition-colors relative">
+        <Link href="/search" className="hover:text-[#d91a1a] transition-colors">
+          <Search className="w-5 h-5" />
+        </Link>
+        <Link
+          href="/cart"
+          className="hover:text-[#d91a1a] transition-colors relative"
+        >
           <ShoppingBag className="w-5 h-5" />
           {cartItemCount > 0 && (
             <span className="absolute -top-2 -right-2 bg-[#d91a1a] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">

@@ -122,10 +122,11 @@ function ProductCard({
           {[1, 2, 3, 4, 5].map((i) => (
             <Star
               key={i}
-              className={`w-3.5 h-3.5 ${i <= Math.round(product.rating)
-                ? "text-[#d91a1a] fill-[#d91a1a]"
-                : "text-neutral-700 fill-neutral-700"
-                }`}
+              className={`w-3.5 h-3.5 ${
+                i <= Math.round(product.rating)
+                  ? "text-[#d91a1a] fill-[#d91a1a]"
+                  : "text-neutral-700 fill-neutral-700"
+              }`}
             />
           ))}
           <span className="text-neutral-500 text-xs ml-1">
@@ -139,10 +140,11 @@ function ProductCard({
             <button
               key={size}
               onClick={() => setSelectedSize(size)}
-              className={`px-3 py-1.5 text-xs font-bold uppercase rounded transition-all ${selectedSize === size
-                ? "bg-[#d91a1a] text-white border border-[#d91a1a]"
-                : "text-neutral-300 border border-neutral-700 hover:border-white hover:text-white"
-                }`}
+              className={`px-3 py-1.5 text-xs font-bold uppercase rounded transition-all ${
+                selectedSize === size
+                  ? "bg-[#d91a1a] text-white border border-[#d91a1a]"
+                  : "text-neutral-300 border border-neutral-700 hover:border-white hover:text-white"
+              }`}
             >
               {size}
             </button>
@@ -172,7 +174,7 @@ export default function CollectionPage() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col font-sans bg-[#0d0d0d] relative overflow-hidden">
+    <main className="min-h-screen flex flex-col font-sans bg-[#031f41] relative overflow-hidden">
       {/* Background noise */}
       <div
         className="absolute inset-0 opacity-5 pointer-events-none"
